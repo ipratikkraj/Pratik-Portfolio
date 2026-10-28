@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ipratikkraj.github.io/Pratik-Portfolio/sitemap.xml

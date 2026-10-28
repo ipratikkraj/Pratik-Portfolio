@@ -1,634 +1,1009 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pratik Raj | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pratik Raj | Full-Stack Developer & Brand Marketing Strategist</title>
+  <meta name="description" content="Pratik Raj is a full-stack developer and brand marketing strategist in Bengaluru, India. He builds websites and web applications, shapes brand identities, and runs growth-focused marketing for businesses.">
+  <meta name="keywords" content="Pratik Raj, Full-Stack Developer Bengaluru, Brand Marketing Strategist, Web Developer India, .NET Developer, Three.js Portfolio, React Developer, BigMotion Co-founder, Digital Marketing Specialist, UI UX Design">
+  <meta name="author" content="Pratik Kumar Raj">
+  <meta name="theme-color" content="#06080d">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="geo.region" content="IN-KA">
+  <meta name="geo.placename" content="Bengaluru">
+  <meta name="geo.position" content="12.9716;77.5946">
+  <meta name="ICBM" content="12.9716, 77.5946">
+  <link rel="canonical" href="https://ipratikkraj.github.io/Pratik-Portfolio/">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pratik Raj Portfolio">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Pratik Raj | Full-Stack Developer & Brand Marketing Strategist">
+  <meta property="og:description" content="I build digital products, grow brands, and turn ideas into business. Explore my development, branding, and marketing work.">
+  <meta property="og:url" content="https://ipratikkraj.github.io/Pratik-Portfolio/">
+  <meta property="og:image" content="https://ipratikkraj.github.io/Pratik-Portfolio/assets/og-portfolio.jpg">
+  <meta property="og:image:secure_url" content="https://ipratikkraj.github.io/Pratik-Portfolio/assets/og-portfolio.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pratik Raj, full-stack developer and brand marketing strategist, over a glowing 3D particle knot.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://ipratikkraj.github.io/Pratik-Portfolio/">
+  <meta name="twitter:title" content="Pratik Raj | Full-Stack Developer & Brand Marketing Strategist">
+  <meta name="twitter:description" content="Digital products, brand strategy, and growth-focused solutions.">
+  <meta name="twitter:image" content="https://ipratikkraj.github.io/Pratik-Portfolio/assets/og-portfolio.jpg">
+  <meta name="twitter:image:alt" content="Pratik Raj, full-stack developer and brand marketing strategist, over a glowing 3D particle knot.">
+
+  <!-- JSON-LD Structured Data Schema for Search Engines (Google Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://ipratikkraj.github.io/Pratik-Portfolio/#person",
+        "name": "Pratik Raj",
+        "alternateName": ["Pratik Kumar Raj", "ipratikkraj"],
+        "jobTitle": "Full-Stack Developer & Brand Marketing Strategist",
+        "url": "https://ipratikkraj.github.io/Pratik-Portfolio/",
+        "image": "https://ipratikkraj.github.io/Pratik-Portfolio/assets/profile/pratik-raj.webp",
+        "email": "mailto:pratik.raj1511@gmail.com",
+        "telephone": "+919523363432",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/ipratikkraj",
+          "https://www.linkedin.com/in/pratik-raj-7667b4201/",
+          "https://coursera.org/verify/NPWS0PIHTUTL",
+          "https://www.bigmotionofficials.com/"
+        ],
+        "knowsAbout": [
+          "Full-Stack Web Development",
+          "ASP.NET Core & C#",
+          "REST APIs & Database Architecture",
+          "JavaScript & Web Technologies",
+          "Three.js & WebGL Visuals",
+          "React & Vue.js",
+          "MongoDB & Microsoft SQL Server",
+          "Brand Positioning & Strategy",
+          "Digital Marketing & SEO",
+          "Google Ads & Meta Advertising",
+          "AI Workflows & Automation"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Foundations of Digital Marketing and E-commerce",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "Google"
+            },
+            "url": "https://coursera.org/verify/NPWS0PIHTUTL"
+          }
+        ],
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "name": "Knowledgeflex Technologies",
+            "url": "https://apps.knowledgeflex.com:852/"
+          },
+          {
+            "@type": "Organization",
+            "name": "BigMotion",
+            "url": "https://www.bigmotionofficials.com/"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ipratikkraj.github.io/Pratik-Portfolio/#website",
+        "url": "https://ipratikkraj.github.io/Pratik-Portfolio/",
+        "name": "Pratik Raj Portfolio",
+        "description": "Official portfolio of Pratik Raj - Full-Stack Developer and Brand Marketing Strategist.",
+        "publisher": {
+          "@id": "https://ipratikkraj.github.io/Pratik-Portfolio/#person"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://ipratikkraj.github.io/Pratik-Portfolio/#webpage",
+        "url": "https://ipratikkraj.github.io/Pratik-Portfolio/",
+        "name": "Pratik Raj | Full-Stack Developer & Brand Marketing Strategist",
+        "isPartOf": {
+          "@id": "https://ipratikkraj.github.io/Pratik-Portfolio/#website"
+        },
+        "mainEntity": {
+          "@id": "https://ipratikkraj.github.io/Pratik-Portfolio/#person"
+        },
+        "about": {
+          "@id": "https://ipratikkraj.github.io/Pratik-Portfolio/#person"
+        },
+        "description": "Pratik Raj is a full-stack developer and brand marketing strategist in Bengaluru, India. He builds websites, scalable web applications, and runs growth-focused brand marketing.",
+        "inLanguage": "en-IN"
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Anton&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
+    /* Layout concept: one fixed WebGL particle form behind the page. It re-forms
+       (knot, sphere, cube, wave, helix, ring) as each section scrolls into view.
+       Content is left-aligned on a 1200px column; glass panels keep text legible. */
+    :root{
+      --ink:#06080d; --ink-2:#0b0f17; --paper:#eef1f6; --mute:#9aa5ba; --line:rgba(238,241,246,.13);
+      --mint:#00de51; --signal:#ffd21f; --glass:rgba(9,13,21,.74);
+      --f-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+      --f-body:'Instrument Sans','Segoe UI',system-ui,sans-serif;
+      --f-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+      --r:18px; --max:1200px;
+      color-scheme:dark;
     }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:96px}
+    body{margin:0;background:var(--ink);color:var(--paper);font:400 1.0625rem/1.65 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ink);z-index:60}
+    a{color:inherit;text-decoration:none}
+    h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance}
+    p{margin:0}
+    ul{margin:0;padding:0;list-style:none}
+    :focus-visible{outline:3px solid var(--mint);outline-offset:4px;border-radius:6px}
+    .wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+    .skip{position:absolute;left:-9999px;top:0}
+    .skip:focus{left:16px;top:16px;z-index:100;background:var(--paper);color:var(--ink);padding:12px 16px;border-radius:8px}
 
-    .purple {
-      color: #a78bfa;
+    #gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:0;transition:opacity .8s}
+    .no-gl #gl{display:none}
+    main,.footer{position:relative;z-index:1}
+
+    .progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--mint),var(--signal));z-index:70}
+
+    /* header */
+    .site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(6,8,13,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font:800 1.25rem var(--f-display);letter-spacing:-.04em}
+    .brand i{font-style:normal;color:var(--signal)}
+    .nav-links{display:flex;gap:26px;font-size:.93rem;color:var(--mute)}
+    .nav-links a{padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+    .nav-links a:hover,.nav-links a[aria-current="true"]{color:var(--paper);border-color:var(--mint)}
+    .menu-toggle{display:none;background:none;color:var(--paper);border:1px solid var(--line);border-radius:10px;padding:9px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid var(--line);transition:transform .2s,background .2s,border-color .2s;cursor:pointer;font-family:inherit;color:var(--paper);background:rgba(255,255,255,.04)}
+    .btn:hover{transform:translateY(-2px);border-color:rgba(238,241,246,.4)}
+    .btn-primary{background:var(--mint);color:#02140a;border-color:var(--mint)}
+    .btn-primary:hover{background:#4be883;border-color:#4be883}
+    .btn-bm{background:linear-gradient(90deg,#4f7dff,#a98bff 60%,#e68fff);color:#fff;border-color:transparent}
+    .btn-bm:hover{filter:brightness(1.12);border-color:transparent}
+
+    /* hero */
+    .hero{padding-block:clamp(56px,9vw,120px) clamp(56px,7vw,96px)}
+    .status{display:inline-flex;align-items:center;gap:10px;font:500 .8rem var(--f-mono);color:var(--mute);border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--glass)}
+    .status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(0,222,81,.6);animation:pulse 2.4s infinite}
+    .hero h1{font-weight:800;font-size:clamp(2.6rem,6.2vw,5.6rem);line-height:1;letter-spacing:-.045em;margin:26px 0 28px;max-width:12.5em}
+    .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+    .hero h1 .ln>span{display:block;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+    .hero h1 .ln:nth-child(2)>span{animation-delay:.12s}
+    .hero h1 .ln:nth-child(3)>span{animation-delay:.24s}
+    .hero h1 em{font-style:normal;color:var(--mint)}
+    .lede{max-width:min(100%,50em);color:#c4cbd9;font-size:clamp(1.05rem,1.6vw,1.2rem)}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+    .hero-note{margin-top:30px;font:400 .85rem var(--f-mono);color:var(--mute)}
+
+    /* crossed banners: keywords in front, "Let's Get Started" behind */
+    .cross{position:relative;z-index:1;height:clamp(150px,17vw,210px);overflow:hidden;display:grid;align-items:center}
+    .band{position:absolute;left:-8%;width:116%;overflow:hidden;white-space:nowrap;font-family:var(--f-display);box-shadow:0 14px 40px rgba(0,0,0,.45)}
+    .band-back{background:var(--mint);color:#000;font-weight:600;font-size:clamp(1.1rem,2.2vw,1.7rem);letter-spacing:-.01em;transform:rotate(3.2deg);z-index:1}
+    .band-front{background:#fff;color:#000;font-weight:800;font-size:clamp(.78rem,1.3vw,.95rem);letter-spacing:.12em;transform:rotate(-3.2deg);z-index:2}
+    .band-track{display:flex;width:max-content;animation:marquee 38s linear infinite}
+    .band-back .band-track{animation-direction:reverse;animation-duration:46s}
+    .band ul{display:flex;align-items:center}
+    .band-front ul{padding:16px 0}
+    .band-back ul{padding:20px 0}
+    .band li{padding-right:38px}
+    .band-back li{padding-right:44px}
+    .band-back li::after{content:"✱";margin-left:44px;font-size:.8em}
+
+    /* sections */
+    .section{padding-block:clamp(72px,10vw,120px)}
+    .section.alt{background:rgba(255,255,255,.022);border-block:1px solid rgba(255,255,255,.05)}
+    .head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:32px;align-items:end;margin-bottom:48px}
+    .head h2{font-weight:800;font-size:clamp(2.1rem,4.6vw,3.8rem);line-height:1.04;letter-spacing:-.04em}
+    .head h2 span{color:var(--mute)}
+    .head p{color:var(--mute);max-width:30em}
+    #skills .head{grid-template-columns:minmax(0,1fr)}#skills .head h2{white-space:nowrap;font-size:clamp(1.55rem,6vw,3.8rem)}
+
+    .panel{background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:var(--r)}
+
+    /* about */
+    .about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px);align-items:start}
+    .profile{padding:30px}
+    .avatar{width:168px;height:168px;border-radius:50%;margin-bottom:24px;overflow:hidden;flex:none}
+    .avatar img{display:block;width:100%;height:100%;object-fit:cover}
+    .profile h3{font-size:1.6rem;font-weight:800;letter-spacing:-.03em}
+    .profile p{color:var(--mute)}
+    .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+    .pill{font-size:.8rem;border:1px solid var(--line);padding:6px 12px;border-radius:99px;color:#d5dced}
+    .pill-link{transition:border-color .2s,color .2s,background .2s}
+    .pill-link:hover,.pill-link:focus-visible{border-color:var(--mint);color:var(--mint);background:rgba(0,222,81,.1);outline:none}
+    .link{color:var(--mint);font-weight:600;font-size:.92rem;border-bottom:1px solid transparent}
+    .link:hover{border-color:var(--mint)}
+    .about-copy{display:grid;gap:18px;color:#c4cbd9;max-width:38em}
+    .about-copy strong{color:var(--paper)}
+    .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:10px}
+    .principle{padding:18px}
+    .principle strong{display:block;font:600 1rem var(--f-display);margin-bottom:6px}
+    .principle span{color:var(--mute);font-size:.88rem;line-height:1.5;display:block}
+
+    /* cards + tilt */
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    [data-tilt]{position:relative;transform-style:preserve-3d;transition:transform .3s ease-out,border-color .2s;will-change:transform}
+    [data-tilt]::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .25s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(0,222,81,.14),transparent 60%)}
+    [data-tilt]:hover{border-color:rgba(0,222,81,.5)}
+    [data-tilt]:hover::after{opacity:1}
+    .card{padding:28px}
+    .icon{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;margin-bottom:22px;background:rgba(0,222,81,.1);color:var(--mint);transform:translateZ(30px)}
+    .icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .card h3{font-size:1.3rem;font-weight:600;letter-spacing:-.02em;margin-bottom:10px}
+    .card>p{color:var(--mute);font-size:.95rem;margin-bottom:18px}
+    .card li{color:#d5dbea;font-size:.9rem;padding:8px 0;border-top:1px solid var(--line)}
+
+
+
+    /* service cards: image left, story right */
+    .rail{padding-inline:max(20px,env(safe-area-inset-left,0px))}
+    .cards{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;max-width:920px;margin-inline:auto}
+    .cards .card{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);padding:0;overflow:hidden;border-radius:28px;border-color:rgba(0,222,81,.35);background:#0a0f0d;min-height:400px;transition:opacity .45s,transform .45s,border-color .3s}
+    .card-img{position:relative;overflow:hidden;background:#06080d;min-height:220px}
+    .card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+    .card-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,#0a0f0d)}
+    .card-img.photo img.bg{position:absolute;inset:0;width:100%;height:100%}
+    .card-img.photo picture{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);aspect-ratio:1070/744;display:block}
+    .card-img.photo.zoom picture{left:-14%;right:-14%;top:0;bottom:0;transform:none;aspect-ratio:auto}.card-img.photo.zoom picture img{width:100%;height:100%;object-fit:cover;object-position:46% 30%}.card-img.photo.zoom.mid picture img{object-position:50% 50%}.card-img.photo.zoom.mid.c45 picture img{object-position:46% 50%}.card-img.photo.zoom.wide picture{left:-42%;right:-42%}
+    .card-img.photo picture img{position:static;width:100%;height:100%;object-fit:cover;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 18%,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 18%,#000 82%,transparent 100%)}
+    .card-img.photo img.bg{object-fit:cover;filter:blur(20px) brightness(.55);transform:scale(1.3)}
+    .card-img.photo::after{background:linear-gradient(90deg,transparent 93%,#0a0f0d)}
+    .card-body{display:flex;flex-direction:column;justify-content:space-between;gap:16px;padding:22px 36px 24px}
+    .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+    .card-num{font:400 3.6rem/1 var(--f-display);letter-spacing:-.03em;color:var(--mint)}
+    .card-num span{font:500 .9rem var(--f-mono);color:var(--mute);letter-spacing:0}
+    .badge{font:700 .72rem var(--f-display);letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+    .cards .card h3{font:600 clamp(1.7rem,3vw,2.5rem)/1.05 var(--f-display);letter-spacing:-.035em;margin-bottom:12px}
+    .cards .card p{color:var(--mute);font-size:1rem;margin-bottom:18px;max-width:34em}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chips li{display:flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.05);font-size:.82rem;font-weight:500;color:#e3e8f1}
+    .chips:has(li:nth-child(5)){gap:5px}
+    .chips:has(li:nth-child(5)) li{padding:4px 9px;font-size:.73rem;gap:6px}
+    .chips li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mint);flex:none}
+
+    /* services: pinned horizontal gallery (enabled by script; plain grid without it) */
+    .prog{display:none}
+    .hscroll{padding-block:0!important}
+    .hscroll .pin{height:var(--pin-h,auto)}
+    .hscroll .pin-sticky{position:sticky;top:calc(72px + env(safe-area-inset-top,0px));height:calc(100vh - 72px - env(safe-area-inset-top,0px));display:flex;flex-direction:column;justify-content:center;gap:20px;overflow:hidden}
+    .hscroll .head{margin-bottom:0}
+    .hud{transition:opacity .25s}body.no-hud .hud{opacity:0}
+    .hscroll .head h2{font-size:clamp(2rem,4vw,3.2rem)}
+    .hscroll .cards{display:flex;gap:18px;width:max-content;padding-left:calc((100vw - min(100vw,1200px))/2 + 20px);padding-right:20px;will-change:transform}
+    .hscroll .rail{padding-inline:0}
+    .hscroll .cards{max-width:none;margin:0}
+    .hscroll .cards .card{width:min(880px,88vw);flex:none;min-height:0;height:clamp(360px,calc(100vh - 322px),480px);opacity:.42;transform:scale(.96)}
+    .hscroll .cards .card.on{opacity:1;transform:none;border-color:var(--mint)}
+    .hscroll .prog{display:flex;align-items:center;gap:18px;font:500 .78rem var(--f-mono);color:var(--mute)}
+    .prog-line{flex:1;max-width:420px;height:2px;background:var(--line);position:relative;overflow:hidden;border-radius:2px}
+    .prog-line i{position:absolute;inset:0;background:var(--mint);transform-origin:0 50%;transform:scaleX(.1667)}
+    .prog-hint{margin-left:auto}
+    .nohs .rail{overflow-x:auto}
+
+    /* skills */
+    .skill-groups{display:grid;gap:34px}
+    .skill-groups h3{font-size:1.05rem;font-weight:600;margin-bottom:14px;color:var(--mute)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{position:relative;border:1px solid rgba(255,255,255,.16);background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.04));-webkit-backdrop-filter:blur(12px) saturate(1.4);backdrop-filter:blur(12px) saturate(1.4);border-radius:12px;padding:10px 16px;font-size:.93rem;color:#eef1f6;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(255,255,255,.04),0 6px 18px rgba(0,0,0,.28);transition:transform .2s,border-color .2s,color .2s,background .2s,box-shadow .2s}
+    .skill:hover{transform:translateY(-3px);border-color:rgba(0,222,81,.6);color:var(--mint);background:linear-gradient(135deg,rgba(0,222,81,.2),rgba(255,255,255,.05));box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 8px 22px rgba(0,222,81,.16)}
+
+    /* work */
+    .work{display:grid;gap:28px;max-width:1040px;margin-inline:auto;padding-bottom:12px}
+    .work-card{position:sticky;top:calc(92px + var(--i,0) * 14px);overflow:hidden;display:flex;flex-direction:column;background:#0b0f17;backdrop-filter:none;-webkit-backdrop-filter:none;transform-origin:50% 0;will-change:transform,filter;box-shadow:0 -18px 40px rgba(0,0,0,.45)}
+    .art{min-height:clamp(240px,42vh,420px);padding:26px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--a1),var(--a2))}
+    .cover{aspect-ratio:5/2;position:relative;overflow:hidden;background:#0b0f17}
+    .cover img{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--pos,top center)}
+    .art::before,.art::after{content:"";position:absolute;border:1px solid rgba(255,255,255,.16);border-radius:50%;width:280px;height:280px;right:-40px;top:-110px}
+    .art::after{width:170px;height:170px;right:40px;top:-50px;border-color:rgba(255,255,255,.28)}
+    .art .label{position:relative;z-index:1;font:800 clamp(2.4rem,7vw,5.6rem)/.96 var(--f-display);letter-spacing:-.05em}
+    .a-teal{--a1:#0f4a45;--a2:#0a1f2d}.a-amber{--a1:#5b4608;--a2:#1d1810}.a-ink{--a1:#1b2a4d;--a2:#0b1020}.a-moss{--a1:#16402a;--a2:#0a1a1a}.a-plum{--a1:#3a2147;--a2:#10101f}.a-rust{--a1:#5a2a14;--a2:#1b1210}
+    .work-body{padding:24px 28px 28px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:36px;row-gap:10px;align-items:start;grid-auto-flow:row}
+    .work-body>.meta,.work-body>h3,.work-body>.tags{grid-column:1}
+    .work-body>p{grid-column:2;grid-row:1 / span 2}
+    .meta{font:500 .78rem var(--f-mono);color:var(--mint)}
+.work-body h3{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .visit{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.04));color:#eef1f6;flex:none;transition:transform .2s,background .2s,border-color .2s,color .2s,box-shadow .2s}
+    .visit:hover,.visit:focus-visible{transform:translate(2px,-2px);background:var(--mint);border-color:var(--mint);color:#04120a;box-shadow:0 6px 18px rgba(0,222,81,.3);outline:none}
+        .work-body h3{font-size:1.35rem;font-weight:800;letter-spacing:-.03em}
+    .work-body p{color:var(--mute);font-size:.95rem}
+    .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
+    .work-body>.note{grid-column:2;grid-row:3;align-self:start;text-align:right;margin-top:6px;padding-top:10px;border-top:1px solid var(--line);font-size:.74rem;line-height:1.5;color:#8b96aa}
+    .tags span{font-size:.76rem;border:1px solid var(--line);border-radius:99px;padding:4px 11px;color:#d9e0ed;background:rgba(255,255,255,.04)}
+    .note{margin-top:26px;font-size:.85rem;color:var(--mute);max-width:46em}
+
+    /* agency */
+    .agency{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(28px,5vw,56px);align-items:center;padding:clamp(26px,5vw,52px);border-radius:28px;background:radial-gradient(ellipse at 15% 0%,rgba(110,120,255,.16),transparent 55%),linear-gradient(rgba(140,150,255,.06) 1px,transparent 1px) 0 0/44px 44px,linear-gradient(90deg,rgba(140,150,255,.06) 1px,transparent 1px) 0 0/44px 44px,#0d1022;border-color:rgba(150,140,255,.22)}
+    .bm-pill{display:inline-flex;font:700 .72rem var(--f-display);letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(170,150,255,.35);border-radius:999px;padding:8px 16px;background:rgba(13,16,34,.8);margin-bottom:22px}
+    .agency h2{font:400 clamp(2.6rem,5.6vw,4.8rem)/1.02 Anton,'Bebas Neue',Impact,sans-serif;letter-spacing:.005em;text-transform:uppercase;margin-bottom:20px;color:#fff}
+    .agency h2 .g{background:linear-gradient(90deg,#4f7dff,#a98bff 55%,#e68fff);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+    .agency p{color:#c4cbd9}
+    .agency-list{background:rgba(8,10,24,.85);border:1px solid rgba(150,140,255,.22);border-radius:var(--r);padding:8px 24px}
+    .agency-list div{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+    .agency-list div:last-child{border-bottom:0}
+    .agency-list strong{font:600 1.02rem var(--f-display)}
+    .agency-list span{color:var(--mute);font-size:.9rem;text-align:right}
+
+    /* timeline: a true chronology */
+    .timeline{margin-left:8px;border-left:1px solid rgba(0,222,81,.45);padding-left:30px;display:grid;gap:30px;max-width:52em}
+    .tl{position:relative}
+    .tl::before{content:"";position:absolute;left:-36px;top:9px;width:11px;height:11px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px rgba(0,222,81,.14)}
+    .tl h3{font-size:1.15rem;font-weight:600;margin-bottom:4px}
+    .tl p{color:var(--mute);font-size:.95rem}
+    .cert{display:flex;gap:24px;align-items:flex-start;margin-top:44px;max-width:62em;padding:24px 28px;border-radius:22px;border:1px solid rgba(255,255,255,.16);background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.03));-webkit-backdrop-filter:blur(12px) saturate(1.4);backdrop-filter:blur(12px) saturate(1.4);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 10px 30px rgba(0,0,0,.3)}
+    .cert-badge{flex:none;align-self:flex-start;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:var(--mint);background:rgba(0,222,81,.12);border:1px solid rgba(0,222,81,.4)}
+    .cert-eyebrow{font:500 .76rem var(--f-mono);color:var(--mint);margin-bottom:6px}
+    .cert h3{font-size:1.2rem;font-weight:700;letter-spacing:-.02em;line-height:1.25}
+    .cert-issuer{color:#d9e0ed;font-size:.88rem;margin-top:4px}
+    .cert-note{color:var(--mute);font-size:.95rem;margin-top:12px;max-width:40em}
+    .cert-link{display:inline-block;margin-top:14px;font-size:.88rem;font-weight:600;color:var(--mint);border-bottom:1px solid rgba(0,222,81,.4);padding-bottom:1px}
+    .cert-link:hover{border-color:var(--mint)}
+    .cert-body{flex:1;min-width:0}
+    .cert-thumb{flex:none;width:min(400px,46%);align-self:flex-start;padding:0;border:1px solid rgba(255,255,255,.22);border-radius:12px;overflow:hidden;background:#fff;cursor:zoom-in;position:relative;transition:transform .25s,box-shadow .25s,border-color .25s}
+    .cert-thumb img{display:block;width:100%;height:auto}
+    .cert-thumb span{position:absolute;left:0;right:0;bottom:0;padding:22px 8px 10px;text-align:center;font:600 .8rem var(--f-body,inherit);color:#fff;background:linear-gradient(180deg,transparent,rgba(6,8,13,.85))}
+    .cert-thumb:hover,.cert-thumb:focus-visible{transform:translateY(-3px) scale(1.02);border-color:var(--mint);box-shadow:0 12px 30px rgba(0,222,81,.2);outline:none}
+    .cert-dialog{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);max-height:92vh;overflow:visible}
+    .cert-dialog::backdrop{background:rgba(3,5,9,.82);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+    .cert-dialog img{display:block;width:100%;height:auto;max-height:88vh;object-fit:contain;border-radius:10px;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+    .cert-close{position:absolute;top:-14px;right:-14px;z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:#0b0f17;color:#fff;font-size:1.4rem;line-height:1;cursor:pointer}
+    .cert-close:hover,.cert-close:focus-visible{background:var(--mint);color:#04120a;outline:none}
+
+    /* contact */
+    .contact{padding:clamp(30px,6vw,72px);border-radius:32px;text-align:center;background:radial-gradient(ellipse at 50% 0%,rgba(0,222,81,.14),transparent 55%),var(--glass)}
+    .contact h2{font-weight:800;font-size:clamp(2.2rem,5.4vw,4.4rem);line-height:1.03;letter-spacing:-.045em;max-width:15em;margin:0 auto 20px}
+    .contact h2 span{color:var(--mint)}
+    .contact>p{max-width:36em;margin:0 auto;color:var(--mute)}
+    .contact .actions{justify-content:center}
+    .contact>p.email{margin-top:30px}
+    .contact>p.small{margin-top:8px}
+    .email{margin-top:22px;font:500 .95rem var(--f-mono);color:var(--paper);user-select:all}
+    .small{margin-top:14px;font-size:.82rem;color:var(--mute)}
+    .small.small-2{margin-top:4px}
+
+    .footer{border-top:1px solid var(--line);padding-block:26px;color:var(--mute);font-size:.85rem;background:var(--ink)}
+    .footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .footer a{color:var(--paper)}
+    .footer a:hover{color:var(--mint)}
+
+    .hud{position:fixed;left:max(20px,env(safe-area-inset-left,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;font:500 .75rem var(--f-mono);color:var(--mute);background:var(--glass);border:1px solid var(--line);border-radius:99px;padding:7px 14px;pointer-events:none}
+    .hud b{color:var(--mint);font-weight:500}
+    .wa{position:fixed;right:max(20px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:40;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#06150b;font:800 .95rem var(--f-display);box-shadow:0 10px 30px rgba(0,0,0,.45);transition:transform .2s}
+    .wa:hover{transform:scale(1.08) rotate(-6deg)}
+    .wa{color:#fff}
+    .wa::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(37,211,102,.55);animation:waPulse 2.4s ease-out infinite;pointer-events:none}
+    @keyframes waPulse{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+    @media (prefers-reduced-motion:reduce){.wa::before{animation:none;opacity:0}}
+
+    @keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+    @keyframes marquee{to{transform:translateX(-50%)}}
+    @keyframes pulse{70%{box-shadow:0 0 0 10px rgba(0,222,81,0)}100%{box-shadow:0 0 0 0 rgba(0,222,81,0)}}
+
+    @media (max-width:960px){
+      .head,.about,.agency{grid-template-columns:minmax(0,1fr)}
+      .head{align-items:start;gap:16px;margin-bottom:34px}
+      .nav-links{gap:16px;font-size:.86rem}
     }
-
-    @keyframes scrollBanner {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
+    @media (max-height:720px){
+      .hscroll .pin-sticky{gap:14px}
+      .hscroll .head p{display:none}
+      .hscroll .head h2{font-size:clamp(1.5rem,3vw,2.2rem)}
+      .hscroll .head .eyebrow,.hscroll .head .kicker{display:none}
+      .hscroll .cards .card{height:auto!important;max-height:calc(100vh - 72px - 150px);min-height:min(300px,calc(100vh - 72px - 150px))}
+      .hscroll .card-body{justify-content:center;gap:14px}
+      .hscroll .card-body{padding:18px 26px 20px;gap:10px}
+      .hscroll .card-num{font-size:2rem}
+      .hscroll .cards .card h3{font-size:1.5rem}
+      .hscroll .cards .card p{font-size:.88rem;margin-bottom:8px}
+      .hscroll .chips{gap:6px}
+      .hscroll .chips li{font-size:.72rem;padding:4px 10px}
     }
-
-    .animate-infinite-marquee {
-      animation: scrollBanner 6s linear infinite;
+    @media (max-height:420px){
+      .hscroll .chips{display:none}
     }
-
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    @media (max-height:560px){
+      .hscroll .card-body{padding:12px 22px 14px;gap:8px}
+      .hscroll .cards .card p{font-size:.8rem;line-height:1.4;margin-bottom:4px}
+      .hscroll .chips li{font-size:.66rem;padding:3px 9px}
+      .hscroll .cards .card{max-height:calc(100vh - 72px - 130px);min-height:0}
     }
-
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
+    @media (max-width:720px) and (max-height:760px){
+      .hscroll .cards .card{grid-template-rows:96px minmax(0,1fr)!important;height:auto!important;max-height:calc(100vh - 72px - 128px)}
+      .hscroll .card-body{padding:12px 18px 14px;gap:8px;overflow:hidden;justify-content:center}
+      .hscroll .card-num{font-size:1.7rem}
+      .hscroll .cards .card h3{font-size:1.2rem}
+      .hscroll .cards .card p{font-size:.8rem;margin-bottom:6px;line-height:1.4}
+      .hscroll .chips li{font-size:.66rem;padding:3px 8px}
     }
-
-    .tooltip {
-      position: absolute;
-      bottom: -2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #1f2937;
-      color: white;
-      padding: 0.25rem 0.5rem;
-      border-radius: 0.375rem;
-      font-size: 0.875rem;
-      opacity: 0;
-      transition: all 0.3s ease;
-      white-space: nowrap;
-      z-index: 10;
+    @media (max-width:720px){
+      .menu-toggle{display:inline-flex}
+      .nav-links{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;padding:12px max(20px,env(safe-area-inset-right,0px)) 18px max(20px,env(safe-area-inset-left,0px));background:var(--ink);border-bottom:1px solid var(--line);font-size:1rem}
+      .nav-links.open{display:flex}
+      .nav-links a{padding:13px 0;border-bottom:1px solid var(--line)}
+      .cards,.work,.principles{grid-template-columns:minmax(0,1fr)}
+      .art{min-height:200px}
+      .cover{aspect-ratio:16/10}
+      .work-body{grid-template-columns:minmax(0,1fr)}
+      .work-body>p{grid-column:1;grid-row:auto}
+      .work-body>.note{grid-column:1;grid-row:auto;text-align:left;margin-bottom:10px}
+      .work-card{top:calc(84px + var(--i,0) * 10px)}
+      .cards .card{grid-template-columns:minmax(0,1fr);grid-template-rows:140px auto}
+      .card-img{min-height:0}
+      .card-img::after{background:linear-gradient(180deg,transparent 55%,#0a0f0d)}
+      .card-img.photo::after{background:none}
+      .card-img.photo img.bg{display:none}
+      .card-img.photo picture,.card-img.photo.zoom picture,.card-img.photo.zoom.wide picture{inset:0;top:0;left:0;right:0;transform:none;aspect-ratio:auto}
+      .card-img.photo.zoom picture img{object-position:50% 48%}
+      .card-img.photo picture img{object-position:50% 70%;-webkit-mask-image:none;mask-image:none}
+      .card-body{padding:16px 22px 20px;gap:12px}
+      .card-num{font-size:2.4rem}
+      .cards .card h3{font-size:1.6rem}
+      .cards .card p{font-size:.92rem;margin-bottom:12px}
+      .chips{gap:6px}
+      .chips li{font-size:.76rem;padding:4px 10px}
+      .hscroll .cards .card{height:auto;min-height:0}
+      .hscroll .head p{display:none}
+      .hscroll .pin-sticky{gap:18px}
+      .hscroll .card li{padding:6px 0;font-size:.86rem}
+      .hud{display:none}
+      .cross{height:190px}
+      .band-back{transform:rotate(8deg)}
+      .band-front{transform:rotate(-8deg)}
+      .actions .btn{flex:1 1 100%;justify-content:center}
+      .cert{flex-direction:column;gap:14px;padding:20px 20px}
+      .cert-thumb{width:100%;align-self:stretch}
+      .cert-close{top:-12px;right:-6px}
+      .agency-list div{flex-direction:column;gap:2px}
+      .agency-list span{text-align:left}
+      .footer .wrap{display:block}
+      .footer .wrap span{display:block;margin-top:8px}
     }
-
-    .group:hover .tooltip {
-      opacity: 1;
-      transform: translate(-50%, -0.5rem);
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 45px;
-      right: 35px;
-      background-color: #25d366;
-      border-radius: 50%;
-      padding: 8px 16px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      font-size: 30px;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      transition: background-color 0.3s ease;
-      z-index: 100000;
-    }
-
-    .whatsapp-float:hover {
-      background-color: #128c7e;
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation:none!important;transition:none!important}
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Person",
+        "@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#person",
+        "name":"Pratik Kumar Raj",
+        "alternateName":"Pratik Raj",
+        "url":"https://ipratikkraj.github.io/Pratik-Portfolio/",
+        "image":"https://ipratikkraj.github.io/Pratik-Portfolio/assets/profile/pratik-raj.webp",
+        "hasCredential":{"@type":"EducationalOccupationalCredential","name":"Foundations of Digital Marketing and E-commerce","credentialCategory":"certificate","recognizedBy":{"@type":"Organization","name":"Google"},"url":"https://coursera.org/verify/NPWS0PIHTUTL"},
+        "jobTitle":["Full-Stack Developer","Brand & Marketing Strategist"],
+        "description":"Full-stack developer and brand marketing strategist who builds websites, web applications, and growth-focused marketing systems.",
+        "email":"mailto:pratik.raj1511@gmail.com",
+        "telephone":"+91-9523363432",
+        "address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},
+        "worksFor":[
+          {"@type":"Organization","name":"Knowledgeflex Technologies"},
+          {"@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#bigmotion"}
+        ],
+        "sameAs":["https://www.linkedin.com/in/pratik-raj-7667b4201/"],
+        "knowsAbout":["Full-stack development","Website development","Web application development","Backend APIs","Database architecture","UI/UX","Brand strategy","Digital marketing","Social media strategy","SEO","Content strategy"],
+        "makesOffer":[
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Website Development"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Web Applications"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Backend & Performance Engineering"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Brand & Marketing Strategy"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Complete Digital Solutions"}}
+        ]
+      },
+      {
+        "@type":"Organization",
+        "@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#bigmotion",
+        "name":"BigMotion",
+        "url":"https://www.bigmotionofficials.com/",
+        "description":"Digital growth agency bringing brand strategy, creative content, technology, and AI-enabled systems together.",
+        "founder":{"@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#person"},
+        "sameAs":["https://www.instagram.com/nigmotionofficials/"]
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#website",
+        "url":"https://ipratikkraj.github.io/Pratik-Portfolio/",
+        "name":"Pratik Raj Portfolio",
+        "inLanguage":"en",
+        "publisher":{"@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#person"}
+      },
+      {
+        "@type":"ProfilePage",
+        "@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#profile",
+        "url":"https://ipratikkraj.github.io/Pratik-Portfolio/",
+        "name":"Pratik Raj | Full-Stack Developer & Brand Marketing Strategist",
+        "isPartOf":{"@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#website"},
+        "mainEntity":{"@id":"https://ipratikkraj.github.io/Pratik-Portfolio/#person"}
+      }
+    ]
+  }
+  </script>
 </head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas id="gl" aria-hidden="true"></canvas>
 
-<body class="bg-gray-50 text-gray-800">
-  <!-- All sections: Home, About, Skills, Services, Portfolio, Contact, Footer, Scripts -->
-  <!-- Skipped here to keep the file short. The content will be exactly what you've shared but cleaned and made responsive. -->
-
-    <!-- Home -->
-  <section id="home" class="relative bg-gray-900 text-white py-20 overflow-hidden">
-
-    <!-- Particle Background Canvas -->
-    <div id="particles-js" class="absolute inset-0 z-0"></div>
-
- <!-- Header -->
-  <header class="fixed top-4 left-4 right-4 z-50 flex justify-between items-center px-4">
-    <!-- Name -->
-    <h1 class="text-xl font-bold text-white" style="font-family: 'Josefin Sans', sans-serif;">Pratik Raj</h1>
-
-    <!-- Hamburger (Mobile Only) -->
-    <button id="menuToggle" class="text-white text-2xl md:hidden">☰</button>
-
-<nav class="hidden md:flex space-x-4 text-sm sm:text-base">
-  <a href="#home"
-     class="text-white font-semibold transition duration-300 group relative">
-    <span class="group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-blue-500 
-                 group-hover:text-transparent group-hover:bg-clip-text transition duration-300">
-      Home
-    </span>
-  </a>
-  <a href="#services"
-     class="text-white font-semibold transition duration-300 group relative">
-    <span class="group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-blue-500 
-                 group-hover:text-transparent group-hover:bg-clip-text transition duration-300">
-      Services
-    </span>
-  </a>
-  <a href="#portfolio"
-     class="text-white font-semibold transition duration-300 group relative">
-    <span class="group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-blue-500 
-                 group-hover:text-transparent group-hover:bg-clip-text transition duration-300">
-      Portfolio
-    </span>
-  </a>
-  <a href="#contact"
-     class="text-white font-semibold transition duration-300 group relative">
-    <span class="group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-blue-500 
-                 group-hover:text-transparent group-hover:bg-clip-text transition duration-300">
-      Contact
-    </span>
-  </a>
-</nav>
-
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Pratik Raj, home">Pratik Raj<i>.</i></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
+        <a href="#about">About</a><a href="#services">Expertise</a><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Mobile Nav Menu -->
-  <div id="mobileMenu" class="hidden md:hidden fixed top-16 right-4 bg-gray-900 rounded-lg shadow-lg p-4 space-y-2 z-40">
-    <a href="#home" class="block text-blue-400 font-semibold">Home</a>
-    <a href="#services" class="block">Services</a>
-    <a href="#portfolio" class="block">Portfolio</a>
-    <a href="#contact" class="block">Contact</a>
-  </div>
-
-    <!-- Main Content Container -->
-    <div
-      class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between relative z-10 mt-16 sm:mt-20">
-
-      <!-- Left Section -->
-      <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug text-white">
-          Hi, I am
-          <span class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
-            Pratik
-          </span>
-          <br />
-          A Passionate<br />
-          <span class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
-            Full-stack Developer
-          </span>
-          <br />
-          &<br />
-          <span class="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
-            Brand & Marketing Strategist
-          </span>
-        </h1>
-
-        <!-- Download Resume Button -->
-<a href="Pratik Raj Resume.pdf" download
-   class="inline-block mt-6 px-6 py-2 rounded-full 
-          bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-medium
-          hover:border-2 hover:border-white hover:bg-transparent hover:text-white transition duration-300">
-  DOWNLOAD CV
-</a>
-
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title" data-shape="knot" data-label="Build" data-x="2.5" data-o="1" data-s="1.15">
+      <p class="status">Available for selected freelance and collaboration work</p>
+      <h1 id="hero-title">
+        <span class="ln"><span>I build digital products.</span></span>
+        <span class="ln"><span>I <em>grow brands.</em></span></span>
+        <span class="ln"><span>I turn ideas into business.</span></span>
+      </h1>
+      <p class="lede">I'm Pratik Raj, a Full-Stack Developer and Brand &amp; Marketing Strategist passionate about helping businesses, bold ideas, and emerging talent unlock their full potential, build impactful digital experiences, and transform their vision into globally recognized brands and successful ventures.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+        <a class="btn" href="#contact">Let's build something</a>
       </div>
+      <p class="hero-note">Full-stack development · Brand strategy · Digital marketing · Co-founder at BigMotion</p>
+    </section>
 
-      <!-- Right Section -->
-      <div class="md:w-1/2 relative flex justify-center items-center">
-        <!-- Connected Dots Background
-      <img src="pngtree.png" alt="Background Dots"
-           class="absolute w-full max-w-md opacity-30 z-0"> -->
-        <!-- Foreground Profile Image -->
-        <img src="coverimg.png" alt="Pratik Photo" class="relative z-10 w-full max-w-sm" style="max-width:35rem">
+    <div class="cross" role="region" aria-label="Services highlight">
+      <div class="band band-back" aria-hidden="true">
+        <div class="band-track"><ul><li>Let's Get Started</li><li>Let's Get Started</li><li>Let's Get Started</li><li>Let's Get Started</li><li>Let's Get Started</li><li>Let's Get Started</li></ul><ul><li>Let's Get Started</li><li>Let's Get Started</li><li>Let's Get Started</li><li>Let's Get Started</li><li>Let's Get Started</li><li>Let's Get Started</li></ul></div>
       </div>
-    </div>
-  </section>
-
-  <!-- Moving Yellow Banner (Fixed Top Full Width with Infinite Scroll) -->
-  <div class="w-full overflow-hidden bg-yellow-400 text-black py-2 z-50 relative">
-    <div class="whitespace-nowrap animate-infinite-marquee font-bold text-lg tracking-wider flex">
-      <span class="mr-8">DOMAIN * WEBSITE * APP * UI/UX * BRAND STRATEGY * LET’S WORK * DIGITAL SOLUTIONS *</span>
-      <span class="mr-8">DOMAIN * WEBSITE * APP * UI/UX * BRAND STRATEGY * LET’S WORK * DIGITAL SOLUTIONS *</span>
-      <span class="mr-8">DOMAIN * WEBSITE * APP * UI/UX * BRAND STRATEGY * LET’S WORK * DIGITAL SOLUTIONS *</span>
-      <span class="mr-8">DOMAIN * WEBSITE * APP * UI/UX * BRAND STRATEGY * LET’S WORK * DIGITAL SOLUTIONS *</span>
-    </div>
-  </div>
-
-  <!-- About Me Section -->
-  <section id="about" class="relative bg-gray-900 text-white py-20 px-4" style="padding-top: 20px;">
-    <div class="max-w-4xl mx-auto text-center">
-      <!-- Section Heading -->
-      <h2 class="text-4xl font-bold mb-4">
-        <span class="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">About Me</span>
-      </h2>
-      <h2 class="text-2xl font-semibold text-purple-400 mb-12">
-        Full-Stack Developer | Brand & Marketing Strategist
-      </h2>
-    </div>
-
-    <!-- First Row: Image Left, Intro Text Right -->
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16">
-      <!-- Left: Circular Image with Overlaid Name Tag -->
-      <div class="flex justify-center relative">
-        <!-- Profile Image -->
-        <!-- Image with Gradient Border -->
-        <div
-          class="relative w-52 h-52 rounded-full p-[3px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 shadow-xl">
-          <img src="shared image.jpg" alt="Pratik Kr. Raj"
-            class="w-full h-full object-cover rounded-full border-4 border-gray-900" style="padding: 3px;" />
-        </div>
-
-
-        <!-- Name Tag -->
-        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 
-            bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
-            text-white px-4 py-1 rounded-full text-sm shadow-lg w-60 text-center
-            border-transparent hover:bg-transparent hover:border-white transition duration-300">
-          <div class="font-semibold">Pratik Kr. Raj</div>
-          <div class="text-xs text-white">Software Developer</div>
-        </div>
-
-      </div>
-
-      <!-- Right: Intro Text -->
-      <div>
-        <p class="text-gray-200 leading-relaxed mb-4">
-          Tech enthusiast who is passionate about learning new technologies and equally dedicated to delivering results,
-          no matter the challenge. A confident and smart team player who brings a diverse set of skills, creativity, and
-          positivity to the team environment.
-        </p>
+      <div class="band band-front">
+        <div class="band-track"><ul><li>WEBSITE DEVELOPMENT ✦</li><li>WEB APPLICATIONS ✦</li><li>BRAND STRATEGY ✦</li><li>CONTENT &amp; CAMPAIGNS ✦</li><li>DIGITAL GROWTH ✦</li><li>AI-POWERED SOLUTIONS ✦</li></ul><ul aria-hidden="true"><li>WEBSITE DEVELOPMENT ✦</li><li>WEB APPLICATIONS ✦</li><li>BRAND STRATEGY ✦</li><li>CONTENT &amp; CAMPAIGNS ✦</li><li>DIGITAL GROWTH ✦</li><li>AI-POWERED SOLUTIONS ✦</li></ul></div>
       </div>
     </div>
 
-    <!-- Second Row: Text Left, Image Right -->
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-      <!-- Left: More Details -->
-      <div>
-        <p class="text-gray-200 leading-relaxed mb-4">
-          Believes in thinking outside the box to solve engineering challenges and introduce innovative approaches to
-          software development. Also experienced in leading digital initiatives and on-ground campaigns as a Brand &
-          Marketing Strategist, combining technology with storytelling to enhance brand visibility and user engagement.
-        </p>
-
-        <p class="text-gray-200 leading-relaxed mb-6">
-          Passionate about building scalable, tech-driven solutions that not only solve real-world problems but also
-          contribute to business growth and long-term brand success.
-        </p>
-
-      </div>
-
-      <!-- Right: Image Again -->
-      <div class="flex justify-end">
-        <img src="Inovation.png" alt="About Image" class="rounded-xl w-full max-w-md shadow-xl"
-          style="max-width: 35rem !important" />
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Skills Section -->
-  <section id="skills" class="bg-gray-900 text-white py-16 px-4" style="padding-top: 10px;">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4">
-        <span class="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">SKILLS</span>
-      </h2>
-      <p class="text-gray-300 mb-12 text-lg">
-        The skills, tools and technologies I use:
-      </p>
-
-      <!-- Skills Icons Grid -->
-      <div class="grid grid-cols-5 gap-6 justify-center items-center">
-
-        <!-- HTML -->
-        <div class="relative group hover:scale-110 transition-transform duration-300 ease-in-out">
-          <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML5" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">HTML5</div>
+    <section class="section" id="about" aria-labelledby="about-title" data-shape="sphere" data-label="Mind" data-x="-2.7" data-o=".4" data-s="1">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="about-title">A developer's mindset. <span>A strategist's vision.</span></h2>
+          <p>I work at the intersection of technology, creativity, and business, turning complex requirements into practical products and clear brand experiences.</p>
         </div>
-
-
-        <!-- CSS -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">CSS3</div>
-        </div>
-
-        <!-- JavaScript -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">JavaScript</div>
-        </div>
-
-        <!-- Vue.js -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/vue-js.png" alt="Vue.js" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">Vue.js</div>
-        </div>
-
-        <!-- React -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">React</div>
-        </div>
-
-        <!-- C# -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="C#" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">C#</div>
-        </div>
-
-        <!-- .NET -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/net-framework.png" alt=".NET" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">.NET</div>
-        </div>
-
-        <!-- SQL Server -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png" alt="SQL Server"
-            class="w-12 h-12 mx-auto" />
-          <div class="tooltip">SQL Server</div>
-        </div>
-
-        <!-- MongoDB -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">MongoDB</div>
-        </div>
-
-        <!-- Git -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">Git</div>
-        </div>
-
-        <!-- Bootstrap -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">Bootstrap</div>
-        </div>
-
-        <!-- Tailwind CSS -->
-        <div class="relative group">
-          <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" alt="Tailwind CSS"
-            class="w-12 h-12 mx-auto" />
-          <div class="tooltip">Tailwind CSS</div>
-        </div>
-
-        <!-- Radzen -->
-        <div class="relative group">
-          <img src="https://www.radzen.com/favicon.ico" alt="Radzen" class="w-12 h-12 mx-auto rounded" />
-          <div class="tooltip">Radzen</div>
-        </div>
-
-        <!-- Branding -->
-        <div class="relative group">
-          <img src="marketing.png" alt="Branding" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">Branding</div>
-        </div>
-
-        <!-- SEO -->
-        <div class="relative group">
-          <img src="Seo.png" alt="SEO" class="w-12 h-12 mx-auto" />
-          <div class="tooltip">SEO</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-    <!-- Moving Yellow Banner (Fixed Top Full Width with Infinite Scroll) -->
-    <div class="w-full overflow-hidden bg-yellow-400 text-black py-2 z-50 relative">
-      <div class="whitespace-nowrap animate-infinite-marquee font-bold text-lg tracking-wider flex">
-        <span class="mr-8">DOMAIN * WEBSITE * APP * UI/UX * BRAND STRATEGY * LET’S WORK * DIGITAL SOLUTIONS *</span>
-        <span class="mr-8">DOMAIN * WEBSITE * APP * UI/UX * BRAND STRATEGY * LET’S WORK * DIGITAL SOLUTIONS *</span>
-        <span class="mr-8">DOMAIN * WEBSITE * APP * UI/UX * BRAND STRATEGY * LET’S WORK * DIGITAL SOLUTIONS *</span>
-        <span class="mr-8">DOMAIN * WEBSITE * APP * UI/UX * BRAND STRATEGY * LET’S WORK * DIGITAL SOLUTIONS *</span>
-      </div>
-    </div>
-
-  <!-- Services Section -->
-  <section id="services" class="bg-gray-900 text-white py-20 px-4 relative overflow-hidden" style="padding-top: 10px;">
-
-    <!-- Section Heading -->
-    <div class="relative mt-12 mb-12 text-center z-20">
-      <h2 class="text-4xl font-bold">
-        Our <span class="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">Services</span>
-      </h2>
-    </div>
-
-    <!-- Horizontal Scroll Cards -->
-<div class="relative z-20 px-4">
-  <div class="flex flex-wrap lg:flex-nowrap gap-6 justify-center">
-
-        <!-- Service Card 1 -->
-        <div class="relative w-72 h-[400px] bg-cover bg-center rounded-xl overflow-hidden shadow-lg flex-shrink-0 group"
-          style="background-image: url('hosting.jpg'); height: 400px; border-radius: 0;">
-          <span
-            class="absolute top-4 left-2 bg-white text-black px-2 py-1 text-xs font-semibold rotate-[-90deg] origin-top-left">Hosting</span>
-          <div
-            class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-10 transition duration-300 p-6 flex flex-col justify-end">
-            <h3 class="text-3xl font-bold mb-2">01</h3>
-            <p class="text-white font-semibold mb-1">Domain & Hosting</p>
-            <p class="text-white text-sm mb-2">Complete hosting and domain setup support.</p>
-            <p class="text-white text-sm">We assist with secure, reliable and scalable server & domain management.</p>
+        <div class="about">
+          <aside class="profile panel" data-tilt>
+            <div class="avatar"><img src="assets/profile/pratik-raj.webp" width="520" height="520" alt="Portrait of Pratik Raj working on a laptop" decoding="async"></div>
+            <h3>Pratik Raj</h3>
+            <p>Full-Stack Developer<br>Brand &amp; Marketing Strategist</p>
+            <div class="pills"><span class="pill">Bengaluru, India</span><a class="pill pill-link" href="https://www.bigmotionofficials.com/" target="_blank" rel="noopener noreferrer" aria-label="Co-founder, BigMotion (opens the BigMotion website in a new tab)">Co-founder, BigMotion <span aria-hidden="true">↗</span></a></div>
+            <div class="pills"><a class="link" href="https://www.linkedin.com/in/pratik-raj-7667b4201/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div>
+          </aside>
+          <div class="about-copy">
+            <p>My journey began with software development: building web applications, designing backend systems, integrating APIs, and understanding the technology that powers great products.</p>
+            <p>Over time, I expanded into brand building and digital marketing, working across research, strategy, content, campaigns, and complete digital solutions. I enjoy bringing technology and creativity together to help businesses reach wider audiences, build trust, and unlock their potential.</p>
+            <p>Today, I am building <strong>BigMotion</strong> with my co-founders, bringing strategy, branding, content, technology, and AI-powered solutions together to help businesses grow and compete in the digital world.</p>
+            <div class="principles">
+              <div class="principle panel"><strong>Build with purpose</strong><span>Solve real problems through thoughtful technology.</span></div>
+              <div class="principle panel"><strong>Create with strategy</strong><span>Build distinctive brands and meaningful digital experiences.</span></div>
+              <div class="principle panel"><strong>Grow with intent</strong><span>Turn ideas and potential into lasting impact.</span></div>
+            </div>
           </div>
         </div>
-
-        <!-- Service Card 2 -->
-        <div class="relative w-72 h-[400px] bg-cover bg-center rounded-xl overflow-hidden shadow-lg flex-shrink-0 group"
-          style="background-image: url('webSiteDark.jpg'); height: 400px; border-radius: 0;">
-          <span
-            class="absolute top-4 left-2 bg-white text-black px-2 py-1 text-xs font-semibold rotate-[-90deg] origin-top-left">Website</span>
-          <div
-            class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-10 transition duration-300 p-6 flex flex-col justify-end">
-            <h3 class="text-3xl font-bold mb-2">02</h3>
-            <p class="text-white font-semibold mb-1">Website Development</p>
-            <p class="text-white text-sm mb-2">Responsive modern websites with great UI/UX.</p>
-            <p class="text-white text-sm">Optimized, SEO-ready websites tailored to your brand identity.</p>
-          </div>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="relative w-72 h-[400px] bg-cover bg-center rounded-xl overflow-hidden shadow-lg flex-shrink-0 group"
-          style="background-image: url('web.jpg'); height: 400px; border-radius: 0;">
-          <span
-            class="absolute top-4 left-2 bg-white text-black px-2 py-1 text-xs font-semibold rotate-[-90deg] origin-top-left">App</span>
-          <div
-            class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-10 transition duration-300 p-6 flex flex-col justify-end">
-            <h3 class="text-3xl font-bold mb-2">03</h3>
-            <p class="text-white font-semibold mb-1">Web App Development</p>
-            <p class="text-white text-sm mb-2">Full-stack web apps using .NET, React.JS & Vue.JS.</p>
-            <p class="text-white text-sm">Robust and scalable apps tailored to your business logic and needs.</p>
-          </div>
-        </div>
-
-        <!-- Service Card 4 -->
-        <div class="relative w-72 h-[400px] bg-cover bg-center rounded-xl overflow-hidden shadow-lg flex-shrink-0 group"
-          style="background-image: url('WenApp.jpg'); height: 400px; border-radius: 0;">
-          <span
-            class="absolute top-4 left-2 bg-white text-black px-2 py-1 text-xs font-semibold rotate-[-90deg] origin-top-left">Support</span>
-          <div
-            class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-10 transition duration-300 p-6 flex flex-col justify-end">
-            <h3 class="text-3xl font-bold mb-2">04</h3>
-            <p class="text-white font-semibold mb-1">Web Maintenance</p>
-            <p class="text-white text-sm mb-2">Upgrades, bug fixes, and performance enhancements.</p>
-            <p class="text-white text-sm">We ensure your website runs fast, smooth, and is always up to date.</p>
-          </div>
-        </div>
-
-        <!-- Service Card 5 -->
-        <div class="relative w-72 h-[400px] bg-cover bg-center rounded-xl overflow-hidden shadow-lg flex-shrink-0 group"
-          style="background-image: url('market.jpg'); height: 400px; border-radius: 0;">
-          <span
-            class="absolute top-4 left-2 bg-white text-black px-2 py-1 text-xs font-semibold rotate-[-90deg] origin-top-left">Branding</span>
-          <div
-            class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-10 transition duration-300 p-6 flex flex-col justify-end">
-            <h3 class="text-3xl font-bold mb-2">05</h3>
-            <p class="text-white font-semibold mb-1">Brand & Marketing</p>
-            <p class="text-white text-sm mb-2">Campaigns, storytelling, and digital brand strategies.</p>
-            <p class="text-white text-sm">From identity to promotion, we build your brand's digital presence.</p>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="bg-gray-900 text-white py-20 px-4" style="padding-top: 10px;">
-    <div class="max-w-7xl mx-auto">
-      <!-- Heading -->
-      <h2 class="text-4xl font-bold text-center mb-12">
-        My <span class="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">Portfolio</span>
-      </h2>
-
-      <!-- Grid Layout -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- Portfolio Card 1 -->
-        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-purple-400 transition duration-300">
-          <img src="11.jpg" alt="Learniflex LMS" class="w-full h-40 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Learniflex LMS</h3>
-            <p class="text-gray-300">Full-stack platform with real-time features and backend analytics.</p>
-          </div>
+    <section class="section alt" id="services" aria-labelledby="services-title" data-shape="cube" data-label="Structure" data-x="2.7" data-o=".4" data-s="1">
+      <div class="pin" id="svc-pin">
+        <div class="pin-sticky">
+          <div class="wrap">
+            <div class="head">
+          <h2 id="services-title">From first idea to <span>what comes next.</span></h2>
+          <p>Choose a focused service or combine capabilities into one joined-up digital solution. Every project starts with your goals, audience, and practical needs.</p>
         </div>
-        <!-- Portfolio Card 4 -->
-        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-purple-400 transition duration-300">
-          <img src="44.jpg" alt="OpenAI Chat Trainer" class="w-full h-40 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">OpenAI Chat Trainer</h3>
-            <p class="text-gray-300">Security-focused AI chatbot with quiz builder and multilingual support.</p>
           </div>
-        </div>
-
-        <!-- Portfolio Card 6 (dummy) -->
-        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-purple-400 transition duration-300">
-          <img src="22.jpg" alt="Portfolio Website" class="w-full h-40 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-            <p class="text-gray-300">Personal branding site built with Tailwind and JS animation.</p>
+          <div class="rail">
+          <div class="cards">
+            <article class="card panel">
+              <div class="card-img photo"><img class="bg" src="assets/services/website-development.webp" alt="" aria-hidden="true" width="1070" height="744" loading="lazy" decoding="async"><picture><source media="(max-width:720px)" srcset="assets/services/website-development-wide.webp" width="1200" height="656"><img class="fg" src="assets/services/website-development.webp" width="1070" height="744" alt="Responsive website shown on a desktop monitor, tablet and phone" loading="lazy" decoding="async"></picture></div>
+              <div class="card-body">
+                <div class="card-top"><div class="card-num">01<span> / 05</span></div><span class="badge">Build</span></div>
+                <div class="card-main"><h3>Website / Portfolio</h3><p>Responsive, SEO-optimized websites and portfolios designed to showcase your brand, highlight your work, and deliver seamless user experiences.</p><ul class="chips"><li>Responsive &amp; Mobile-First Design</li><li>SEO-Optimized</li><li>Fast Loading &amp; Performance</li><li>Creative UI/UX</li><li>Business &amp; Portfolio Websites</li></ul></div>
+              </div>
+            </article>
+            <article class="card panel">
+              <div class="card-img photo zoom mid c45"><img class="bg" src="assets/services/web-applications.webp" alt="" aria-hidden="true" width="1200" height="675" loading="lazy" decoding="async"><picture><img class="fg" src="assets/services/web-applications.webp" width="1200" height="675" alt="Glowing web development interface with code, database, cloud, gear and responsive device icons" loading="lazy" decoding="async"></picture></div>
+              <div class="card-body">
+                <div class="card-top"><div class="card-num">02<span> / 05</span></div><span class="badge">Product</span></div>
+                <div class="card-main"><h3>Web Applications</h3><p>Scalable, full-stack web applications built around your workflows, users, and business requirements.</p><ul class="chips"><li>Frontend, Backend &amp; Database Integration</li><li>Payment Gateways</li><li>Third-Party Integrations</li><li>Development &amp; Deployment Setup</li></ul></div>
+              </div>
+            </article>
+            <article class="card panel">
+              <div class="card-img photo zoom mid"><img class="bg" src="assets/services/backend-cloud.webp" alt="" aria-hidden="true" width="750" height="500" loading="lazy" decoding="async"><picture><img class="fg" src="assets/services/backend-cloud.webp" width="750" height="500" alt="Cloud server surrounded by database, API, Docker, Kubernetes, AWS and security icons" loading="lazy" decoding="async"></picture></div>
+              <div class="card-body">
+                <div class="card-top"><div class="card-num">03<span> / 05</span></div><span class="badge">Systems</span></div>
+                <div class="card-main"><h3>Backend &amp; Performance</h3><p>Reliable backend systems designed with maintainability, integrations, and performance in mind.</p><ul class="chips"><li>API Development</li><li>Database architecture &amp; query optimization</li><li>C#, .NET, MongoDB, SQL Server</li><li>Windows Service &amp; Console App</li></ul></div>
+              </div>
+            </article>
+            <article class="card panel">
+              <div class="card-img photo zoom mid wide"><img class="bg" src="assets/services/brand-marketing.webp" alt="" aria-hidden="true" width="1200" height="680" loading="lazy" decoding="async"><picture><img class="fg" src="assets/services/brand-marketing.webp" width="1200" height="680" alt="Laptop dashboard surrounded by Google, Meta, Instagram and WhatsApp icons showing more traffic, better engagement, quality leads and higher ROI" loading="lazy" decoding="async"></picture></div>
+              <div class="card-body">
+                <div class="card-top"><div class="card-num">04<span> / 05</span></div><span class="badge">Growth</span></div>
+                <div class="card-main"><h3>Brand &amp; Marketing Strategy</h3><p>Build a distinctive brand presence through strategic positioning, engaging content, and data-driven marketing campaigns that support business growth.</p><ul class="chips"><li>Brand Positioning &amp; Messaging</li><li>Campaign Strategy</li><li>Social Media Setup &amp; Optimization</li><li>Google &amp; Meta Ads</li><li>Content, Reels, Posts &amp; Stories</li><li>Performance Tracking &amp; Reporting</li></ul></div>
+              </div>
+            </article>
+            <article class="card panel">
+              <div class="card-img photo zoom mid"><img class="bg" src="assets/services/complete-digital.webp" alt="" aria-hidden="true" width="1200" height="800" loading="lazy" decoding="async"><picture><img class="fg" src="assets/services/complete-digital.webp" width="1200" height="800" alt="A hand touching a glowing globe surrounded by brand, online presence, website, content, marketing, growth and AI solutions icons" loading="lazy" decoding="async"></picture></div>
+              <div class="card-body">
+                <div class="card-top"><div class="card-num">05<span> / 05</span></div><span class="badge">End to end</span></div>
+                <div class="card-main"><h3>Complete Digital Solutions</h3><p>An integrated digital ecosystem combining branding, online presence, content, marketing, &amp; modern technology to accelerate business growth &amp; reach a wider &amp; global audience.</p><ul class="chips"><li>Brand Identity &amp; Digital Presence</li><li>Website/Portfolio &amp; Online Launch</li><li>Content Creation</li><li>Marketing Campaigns &amp; Ads</li><li>Audience Growth &amp; Global Reach</li><li>AI-Powered Workflow Automation</li></ul></div>
+              </div>
+            </article>
           </div>
+          </div>
+          <div class="wrap prog" aria-hidden="true"><span id="svc-count">01 / 05</span><span class="prog-line"><i id="svc-bar"></i></span><span class="prog-hint">Scroll to explore →</span></div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- Contact -->
-  <section id="contact" class="bg-gray-900 text-white py-20 px-4" style="padding-top: 10px;">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-6">
-        <span class="bg-gradient-to-r from-pink-500 to-blue-500 text-transparent bg-clip-text">Contact</span>
-      </h2>
-      <p class="mb-4 text-lg">Feel free to reach out through any of the platforms below.</p>
-
-      <!-- Icon Row Contact Links -->
-      <div class="flex justify-center space-x-6 text-3xl mt-8">
-        <!-- Phone -->
-        <a href="tel:+919523363432" class="text-blue-400 hover:text-pink-400 transition duration-300" title="Call">
-          <i class="fas fa-phone-alt"></i>
-        </a>
-
-        <!-- Gmail -->
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pratik.raj1511@gmail.com" target="_blank"
-          class="text-blue-400 hover:text-pink-400 transition duration-300" title="Send Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/pratik-raj-7667b4201" target="_blank"
-          class="text-blue-400 hover:text-pink-400 transition duration-300" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/pratikraj1511" target="_blank"
-          class="text-blue-400 hover:text-pink-400 transition duration-300" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
+    <section class="section" id="skills" aria-labelledby="skills-title" data-shape="wave" data-label="Stack" data-x="-2.6" data-o=".4" data-s="1.05">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="skills-title">The skills behind <span>the impact.</span></h2>
+          
+        </div>
+        <div class="skill-groups">
+          <div><h3>Development &amp; UI</h3><ul class="skills"><li class="skill">HTML5</li><li class="skill">CSS</li><li class="skill">JavaScript</li><li class="skill">Blazor</li><li class="skill">React</li><li class="skill">Vue.js</li><li class="skill">Bootstrap</li><li class="skill">Three.js</li><li class="skill">Tailwind CSS</li></ul></div>
+          <div><h3>Backend &amp; Data</h3><ul class="skills"><li class="skill">C#</li><li class="skill">.NET</li><li class="skill">REST APIs</li><li class="skill">Entity Framework</li><li class="skill">LINQ</li><li class="skill">SQL Server</li><li class="skill">MongoDB</li><li class="skill">Firebase</li><li class="skill">WebSockets</li><li class="skill">Windows Services</li></ul></div>
+          <div><h3>Brand, Marketing &amp; Growth</h3><ul class="skills"><li class="skill">Brand Positioning</li><li class="skill">Market Analysis</li><li class="skill">Digital Presence</li><li class="skill">Social Media</li><li class="skill">Content Strategy</li><li class="skill">SEO</li><li class="skill">Creative Campaign</li><li class="skill">Advertisements</li><li class="skill">AI Workflows</li></ul></div>
+        </div>
       </div>
+    </section>
 
+    <section class="section alt" id="work" aria-labelledby="work-title" data-shape="helix" data-label="Craft" data-x="2.7" data-o=".4" data-s="1">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="work-title">Different challenges. <span>Thoughtful solutions.</span></h2>
+          <p>A selection of software, brand, and campaign work across learning technology, AI, marketing, and campaign operations.</p>
+        </div>
+        <div class="work">
+          <article class="work-card panel" style="--i:0">
+            <div class="cover"><img src="assets/work/learniflex.webp" width="1348" height="752" alt="Learniflex homepage showing the AI-powered learning platform and its admin dashboard" style="--pos:top center" loading="lazy" decoding="async"></div>
+            <div class="work-body"><div class="meta">Software · Learning Management System</div><h3><span>Learniflex</span><a class="visit" href="https://apps.knowledgeflex.com:852/" target="_blank" rel="noopener noreferrer" aria-label="Visit Learniflex website (opens in a new tab)" title="Visit website"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></h3><p>Delivered end-to-end backend development, REST APIs, Windows Services, OpenAI-powered features, AI-driven content creation, and scalable database architecture to support a growing learning platform.</p><div class="tags"><span>.NET</span><span>APIs</span><span>MongoDB</span><span>AI learning tools</span></div><div class="note">Note: I am working on this project as an employee of Knowledgeflex Technologies Pvt. Ltd. All ownership of this project rests with the company.</div></div>
+          </article>
+          <article class="work-card panel" style="--i:1">
+            <div class="cover"><img src="assets/work/bluewhale-publications.webp" width="1360" height="767" alt="Bluewhale Publications homepage with the headline Your story, our expertise, a brighter tomorrow" style="--pos:top center" loading="lazy" decoding="async"></div>
+            <div class="work-body"><div class="meta">Website · Publishing</div><h3><span>Bluewhale Publications</span><a class="visit" href="https://bluewhalepublications.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Bluewhale Publications website (opens in a new tab)" title="Visit website"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></h3><p>Drove 130%+ sales growth in 6 months through data-driven market analysis, comprehensive brand identity development, building a new website from scratch, and implementing an SEO-optimized digital presence.</p><div class="tags"><span>Websites</span><span>Branding</span><span>SEO</span><span>Market Analysis</span></div></div>
+          </article>
+          <article class="work-card panel" style="--i:2">
+            <div class="cover"><img src="assets/work/curls-cafe.webp" width="1360" height="767" alt="Interior of Curls &amp; Café by Ikonic, a salon and boutique café in Ramgarh" style="--pos:center 45%" loading="lazy" decoding="async"></div>
+            <div class="work-body"><div class="meta">Branding · Content · Digital Presence</div><h3><span>Curls &amp; Café by Ikonic</span><a class="visit" href="https://curlsandcafe.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Curls &amp; Café website (opens in a new tab)" title="Visit website"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></h3><p>Brand and digital marketing work for a salon-and-café concept, including positioning, complete online profile presence setup, launch communication, social content, and promotional creative direction.</p><div class="tags"><span>Brand story</span><span>Social media</span><span>Campaigns</span><span>Content</span></div></div>
+          </article>
+          <article class="work-card panel" style="--i:3">
+            <div class="cover"><img src="assets/work/bigmotion.webp" width="1365" height="767" alt="BigMotion homepage with the headline More than marketing, we build businesses in motion" style="--pos:top center" loading="lazy" decoding="async"></div>
+            <div class="work-body"><div class="meta">Agency · Brand · Technology</div><h3><span>BigMotion</span><a class="visit" href="https://www.bigmotionofficials.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit BigMotion website (opens in a new tab)" title="Visit website"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a></h3><p>BigMotion was born to help promising ideas, businesses, and talent overcome digital barriers through strategic branding, creative content, technology, and AI-powered solutions that drive growth and unlock their full potential.</p><div class="tags"><span>Branding</span><span>Strategy</span><span>Digital growth</span><span>Technology</span></div></div>
+          </article>
+        </div>
+        <p class="note">Some projects are under client or employer confidentiality, so details are shared selectively.</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="experience" aria-labelledby="experience-title" data-shape="knot" data-label="Journey" data-x="2.7" data-o=".4" data-s="1">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="experience-title">Experience that <span>connects the dots.</span></h2>
+          <p>From engineering foundations to campaign execution and agency building, each chapter adds a different perspective to the work.</p>
+        </div>
+        <div class="timeline">
+          <div class="tl"><h3>Software Developer · Knowledgeflex Technologies</h3><p>April 2023 – Present · Full-stack development, backend services, database architecture, Android integrations, and an AI-powered learning platform.</p></div>
+          <div class="tl"><h3>Brand &amp; Marketing Strategist · Curls &amp; Café by Ikonic</h3><p>2025 · Led market research, concept development, branding, launch planning, and end-to-end marketing for an incubated salon-and-café concept.</p></div>
+          <div class="tl"><h3>Branding &amp; Marketing · Bluewhale Publications</h3><p>2026 · Contributed to brand development, marketing strategy, and digital presence to strengthen brand visibility and audience reach.</p></div>
+          <div class="tl"><h3>Co-founder · BigMotion</h3><p>2026 – Present · Building a digital growth agency combining branding, marketing, creative content, technology, and AI-powered solutions to help businesses scale.</p></div>
+        </div>
+        <aside class="cert" aria-labelledby="cert-title">
+          <div class="cert-badge" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.6 14.2-1.6 7 5-2.8 5 2.8-1.6-7"/><path d="m9.5 9 1.7 1.7 3.3-3.4"/></svg></div>
+          <div class="cert-body">
+            <div class="cert-eyebrow">Certification · Sep 2026</div>
+            <h3 id="cert-title">Foundations of Digital Marketing and E-commerce</h3>
+            <p class="cert-issuer">Authorized by Google · Offered through Coursera</p>
+            <p class="cert-note">Learning from leading professionals at Google gave me sharper clarity on how digital marketing and e-commerce really work, and I bring that understanding to every brand and campaign I build.</p>
+            <a class="cert-link" href="https://coursera.org/verify/NPWS0PIHTUTL" target="_blank" rel="noopener noreferrer">Verify certificate <span aria-hidden="true">↗</span></a>
+          </div>
+          <button type="button" class="cert-thumb" id="cert-open" aria-haspopup="dialog" aria-label="View the full certificate"><img src="assets/certs/google-digital-marketing-ecommerce.webp" width="1650" height="1275" alt="Google certificate of completion for Foundations of Digital Marketing and E-commerce, awarded to Pratik Raj" loading="lazy" decoding="async"><span>View full certificate</span></button>
+        </aside>
+        <dialog class="cert-dialog" id="cert-dialog" aria-label="Certificate preview"><button type="button" class="cert-close" id="cert-close" aria-label="Close preview">×</button><img src="assets/certs/google-digital-marketing-ecommerce.webp" width="1650" height="1275" alt="Full Google certificate: Foundations of Digital Marketing and E-commerce, Pratik Raj, Sep 8, 2026" decoding="async"></dialog>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title" data-shape="sphere" data-label="Connect" data-x="0" data-o=".55" data-s="1.3">
+      <div class="wrap">
+        <div class="contact panel">
+          <h2 id="contact-title">Let's build something <span>worth remembering.</span></h2>
+          <p>Whether you need a website, a web application, a stronger brand presence, or a joined-up digital growth plan, tell me what you're working on and let's explore the right next step.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://wa.me/919523363432?text=Hi%20Pratik%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Chat on WhatsApp <span aria-hidden="true">↗</span></a>
+            <a class="btn" href="mailto:pratik.raj1511@gmail.com?subject=Project%20Enquiry">Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/pratik-raj-7667b4201/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="email">pratik.raj1511@gmail.com</p>
+          <p class="small">Bengaluru, India</p>
+          <p class="small small-2">Available for selected freelance and collaboration opportunities</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Pratik Raj.</span>
+      <span><a href="#home">Back to top ↑</a> · <a href="mailto:pratik.raj1511@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/pratik-raj-7667b4201/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-400 py-6 text-center text-sm border-t border-gray-700">
-    © 2025 <span class="text-white font-medium">Pratik Kumar Raj</span>. All rights reserved.
   </footer>
 
-      <a href="https://wa.me/919523363432" target="_blank" class="whatsapp-float">
-      <i class="bi bi-whatsapp"></i>
-    </a>
+  <div class="hud" aria-hidden="true">form: <b id="hud-label">Build</b></div>
+  <a class="wa" href="https://wa.me/919523363432?text=Hi%20Pratik%2C%20I%27d%20like%20to%20discuss%20a%20project." aria-label="Contact Pratik on WhatsApp" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="28" height="28" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
-
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
+  <script src="assets/vendor/three.min.js"></script>
   <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 70, density: { enable: true, value_area: 800 } },
-        color: { value: "#ffffff" },
-        shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5 } },
-        opacity: { value: 0.5, random: false },
-        size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out" }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" },
-          resize: true
-        },
-        modes: {
-          repulse: { distance: 200, duration: 0.4 },
-          push: { particles_nb: 4 }
-        }
-      },
-      retina_detect: true
-    });
-    const stats = new Stats();
-    stats.showPanel(0);
-    document.body.appendChild(stats.dom);
-    requestAnimationFrame(function update() {
-      stats.begin(); stats.end(); requestAnimationFrame(update);
-    });
+  (function(){
+    'use strict';
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var sections = Array.prototype.slice.call(document.querySelectorAll('[data-shape]'));
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
+    /* ---------- menu, year, progress, active link ---------- */
+    var toggle = document.querySelector('.menu-toggle'), nav = document.getElementById('primary-nav');
+    function closeMenu(){ nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); toggle.textContent='Menu'; }
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open)); toggle.textContent = open ? 'Close' : 'Menu';
+    });
+    nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', function () {
-        mobileMenu.classList.toggle('hidden');
+    var bar = document.getElementById('progress'), lastY = window.scrollY, vel = 0;
+    function onScroll(){
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = 'scaleX(' + (h > 0 ? window.scrollY / h : 0) + ')';
+      vel = Math.min(Math.abs(window.scrollY - lastY) / 80, 1); lastY = window.scrollY;
+    }
+    window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+    var links = {};
+    nav.querySelectorAll('a').forEach(function(a){ links[a.getAttribute('href').slice(1)] = a; });
+
+    /* ---------- 3D tilt on cards ---------- */
+    if(!reduce && window.matchMedia('(hover:hover)').matches){
+      document.querySelectorAll('[data-tilt]').forEach(function(el){
+        el.addEventListener('pointermove', function(e){
+          var r = el.getBoundingClientRect(), px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+          el.style.transform = 'perspective(900px) rotateX(' + ((.5 - py) * 7) + 'deg) rotateY(' + ((px - .5) * 9) + 'deg)';
+          el.style.setProperty('--mx', (px * 100) + '%'); el.style.setProperty('--my', (py * 100) + '%');
+        });
+        el.addEventListener('pointerleave', function(){ el.style.transform = ''; });
       });
     }
-  });
-  </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const menuToggle = document.getElementById('menuToggle');
-      const mobileMenu = document.getElementById('mobileMenu');
 
-      if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', function () {
-          mobileMenu.classList.toggle('hidden');
-        });
+
+    /* ---------- services: vertical scroll drives a pinned horizontal gallery ---------- */
+    var svc = document.getElementById('services'), pin = document.getElementById('svc-pin');
+    var svcTrack = svc.querySelector('.cards'), svcCards = Array.prototype.slice.call(svcTrack.children);
+    var svcBar = document.getElementById('svc-bar'), svcCount = document.getElementById('svc-count'), svcDist = 0, svcOn = false;
+    function svcSetup(){
+      svcOn = !reduce;
+      svc.classList.toggle('hscroll', svcOn);
+      if(!svcOn){ svcTrack.style.transform = ''; pin.style.removeProperty('--pin-h'); svcCards.forEach(function(c){ c.classList.remove('on'); }); return; }
+      svcDist = Math.max(0, svcTrack.scrollWidth - window.innerWidth);
+      var stage = window.innerHeight - 72 - (parseFloat(getComputedStyle(document.documentElement).paddingTop) || 0);
+      pin.style.setProperty('--pin-h', (stage + svcDist) + 'px');
+      svcFx();
+    }
+    function svcFx(){
+      if(!svcOn) return;
+      var r = pin.getBoundingClientRect(); document.body.classList.toggle('no-hud', r.top < 72 && r.bottom > window.innerHeight - 2);
+      var p = svcDist ? Math.max(0, Math.min(1, (72 - r.top) / svcDist)) : 0;
+      svcTrack.style.transform = 'translate3d(' + (-p * svcDist).toFixed(1) + 'px,0,0)';
+      var n = svcCards.length, idx = Math.round(p * (n - 1));
+      svcCards.forEach(function(c, i){ c.classList.toggle('on', i === idx); });
+      svcBar.style.transform = 'scaleX(' + (1/n + p * (n - 1)/n).toFixed(4) + ')';
+      svcCount.textContent = ('0' + (idx + 1)).slice(-2) + ' / ' + ('0' + n).slice(-2);
+    }
+    window.addEventListener('scroll', svcFx, {passive:true});
+    window.addEventListener('resize', svcSetup);
+    window.addEventListener('load', svcSetup);
+    svcSetup();
+
+    /* ---------- stacked project cards: previous card recedes as the next covers it ---------- */
+    var stack = Array.prototype.slice.call(document.querySelectorAll('.work-card'));
+    function stackFx(){
+      if(reduce || !stack.length) return;
+      for(var k = 0; k < stack.length - 1; k++){
+        var a = stack[k], b = stack[k+1];
+        var top = parseFloat(getComputedStyle(a).top) || 0, ar = a.getBoundingClientRect(), br = b.getBoundingClientRect();
+        var p = Math.max(0, Math.min(1, (top + ar.height - br.top) / ar.height));
+        a.style.transform = 'scale(' + (1 - .05*p).toFixed(4) + ')';
+        a.style.filter = 'brightness(' + (1 - .55*p).toFixed(3) + ')';
       }
-    });
-  </script>
-</body>
+    }
+    window.addEventListener('scroll', stackFx, {passive:true}); window.addEventListener('resize', stackFx); stackFx();
 
+    /* ---------- Three.js particle form ---------- */
+    var canvas = document.getElementById('gl');
+    var root = document.documentElement;
+    if(!window.THREE){ root.classList.add('no-gl'); return; }
+    var renderer;
+    try{ renderer = new THREE.WebGLRenderer({canvas:canvas, antialias:false, alpha:true, powerPreference:'high-performance'}); }
+    catch(e){ root.classList.add('no-gl'); return; }
+
+    var small = window.innerWidth < 720;
+    var N = small ? 3400 : 7600;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(45, 1, .1, 100);
+    camera.position.z = 8;
+    var pivot = new THREE.Group(), spin = new THREE.Group();
+    pivot.add(spin); scene.add(pivot);
+
+    function rnd(a,b){ return a + Math.random() * (b - a); }
+    var shapes = {
+      knot:function(a,i){
+        var t = Math.random() * 6.2832, r = Math.cos(3*t) + 2, s = .62;
+        var u = Math.random()*6.2832, v = Math.acos(rnd(-1,1)), d = Math.cbrt(Math.random()) * .17;
+        a[i]   = r*Math.cos(2*t)*s + d*Math.sin(v)*Math.cos(u);
+        a[i+1] = r*Math.sin(2*t)*s + d*Math.sin(v)*Math.sin(u);
+        a[i+2] = -Math.sin(3*t)*s + d*Math.cos(v);
+      },
+      sphere:function(a,i,k){
+        var y = 1 - 2*(k + .5)/N, rad = Math.sqrt(1 - y*y), th = k * 2.39996, R = 1.75 * (1 + rnd(-.02,.02));
+        a[i] = Math.cos(th)*rad*R; a[i+1] = y*R; a[i+2] = Math.sin(th)*rad*R;
+      },
+      cube:function(a,i){
+        var h = 1.35, step = h*2/8, ax = Math.floor(Math.random()*3), sg = Math.random() < .5 ? -h : h;
+        var snap = function(){ return Math.round(rnd(-h,h)/step)*step; };
+        var p, q; if(Math.random() < .5){ p = snap(); q = rnd(-h,h); } else { p = rnd(-h,h); q = snap(); }
+        var c = [0,0,0]; c[ax] = sg; c[(ax+1)%3] = p; c[(ax+2)%3] = q;
+        a[i] = c[0]; a[i+1] = c[1]; a[i+2] = c[2];
+      },
+      wave:function(a,i){
+        var x = rnd(-3.1,3.1), z = rnd(-2.2,2.2), y = .38*Math.sin(x*1.5) + .3*Math.cos(z*2.1 + x*.6);
+        var c = Math.cos(.8), s = Math.sin(.8);
+        a[i] = x; a[i+1] = y*c - z*s; a[i+2] = y*s + z*c;
+      },
+      helix:function(a,i){
+        var y = rnd(-2.4,2.4), ang = y*2.2, R = 1.1, j = .035;
+        if(Math.random() < .16){ var k = rnd(-1,1), ph = Math.round(y*3)/3; ang = ph*2.2; y = ph; a[i] = R*Math.cos(ang)*k; a[i+2] = R*Math.sin(ang)*k; }
+        else { ang += Math.random() < .5 ? 0 : Math.PI; a[i] = R*Math.cos(ang); a[i+2] = R*Math.sin(ang); }
+        a[i] += rnd(-j,j); a[i+1] = y + rnd(-j,j); a[i+2] += rnd(-j,j);
+      },
+      torus:function(a,i){
+        var u = Math.random()*6.2832, v = Math.random()*6.2832, R = 1.55, r = .55, c = Math.cos(.9), s = Math.sin(.9);
+        var x = (R + r*Math.cos(v))*Math.cos(u), y = r*Math.sin(v), z = (R + r*Math.cos(v))*Math.sin(u);
+        a[i] = x; a[i+1] = y*c - z*s; a[i+2] = y*s + z*c;
+      }
+    };
+    var targets = {};
+    Object.keys(shapes).forEach(function(name){
+      var arr = new Float32Array(N*3);
+      for(var k = 0; k < N; k++) shapes[name](arr, k*3, k);
+      targets[name] = arr;
+    });
+
+    var pos = new Float32Array(N*3), col = new Float32Array(N*3), rate = new Float32Array(N);
+    var mint = new THREE.Color('#00de51'), sig = new THREE.Color('#ffd21f'), pale = new THREE.Color('#dfe8ff');
+    for(var n = 0; n < N; n++){
+      var rr = Math.random(), c = rr < .13 ? sig : (rr < .2 ? pale : mint), b = rnd(.5,1);
+      col[n*3] = c.r*b; col[n*3+1] = c.g*b; col[n*3+2] = c.b*b;
+      rate[n] = rnd(.018,.075);
+      pos[n*3] = rnd(-4,4); pos[n*3+1] = rnd(-4,4); pos[n*3+2] = rnd(-4,4);
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(pos,3));
+    geo.setAttribute('color', new THREE.BufferAttribute(col,3));
+
+    var tc = document.createElement('canvas'); tc.width = tc.height = 64;
+    var cx = tc.getContext('2d'), grad = cx.createRadialGradient(32,32,0,32,32,32);
+    grad.addColorStop(0,'rgba(255,255,255,1)'); grad.addColorStop(.35,'rgba(255,255,255,.55)'); grad.addColorStop(1,'rgba(255,255,255,0)');
+    cx.fillStyle = grad; cx.fillRect(0,0,64,64);
+    var mat = new THREE.PointsMaterial({size: small ? .075 : .06, map:new THREE.CanvasTexture(tc), vertexColors:true, transparent:true, depthWrite:false, blending:THREE.AdditiveBlending, sizeAttenuation:true});
+    var points = new THREE.Points(geo, mat);
+    spin.add(points);
+
+    var cur = null, goal = {x:2.5, y:0, s:1.15, o:1}, view = {x:2.5, y:0, s:1.15, o:0};
+    var tgt = targets.knot, hud = document.getElementById('hud-label');
+
+    function setSection(el){
+      var shape = el.getAttribute('data-shape'); if(cur === el) return; cur = el;
+      tgt = targets[shape];
+      var o = parseFloat(el.getAttribute('data-o')), s = parseFloat(el.getAttribute('data-s'));
+      var x = parseFloat(el.getAttribute('data-x'));
+      var isHome = el.id === 'home';
+      goal = small ? {x:0, y:isHome ? 1.5 : 0, s:s*.72, o:isHome ? .55 : Math.min(o,.3)} : {x:x, y:0, s:s, o:o};
+      hud.textContent = el.getAttribute('data-label');
+      if(reduce){ pos.set(tgt); view.x = goal.x; view.y = goal.y; view.s = goal.s; view.o = goal.o; draw(); }
+    }
+
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        setSection(en.target);
+        Object.keys(links).forEach(function(id){ links[id].removeAttribute('aria-current'); });
+        if(links[en.target.id]) links[en.target.id].setAttribute('aria-current','true');
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    sections.forEach(function(s){ io.observe(s); });
+    setSection(sections[0]);
+
+    var mx = 0, my = 0, rx = 0, ry = 0;
+    if(!reduce) window.addEventListener('pointermove', function(e){
+      mx = e.clientX / window.innerWidth - .5; my = e.clientY / window.innerHeight - .5;
+    }, {passive:true});
+
+    function resize(){
+      var w = window.innerWidth, h = window.innerHeight;
+      renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+      small = w < 720;
+    }
+    window.addEventListener('resize', function(){ resize(); var c = cur; cur = null; setSection(c); });
+    resize();
+
+    function draw(){
+      pivot.position.set(view.x, view.y, 0); pivot.scale.setScalar(view.s);
+      canvas.style.opacity = view.o.toFixed(3);
+      renderer.render(scene, camera);
+    }
+    if(reduce){ spin.rotation.y = .6; pivot.rotation.x = .25; }
+
+    var running = true;
+    document.addEventListener('visibilitychange', function(){ running = !document.hidden; if(running) requestAnimationFrame(frame); });
+    function frame(){
+      if(!running || reduce) return;
+      requestAnimationFrame(frame);
+      for(var i = 0, m = N*3; i < m; i++) pos[i] += (tgt[i] - pos[i]) * rate[(i/3)|0];
+      geo.attributes.position.needsUpdate = true;
+      view.x += (goal.x - view.x) * .05; view.y += (goal.y - view.y) * .05;
+      view.s += (goal.s * (1 + vel*.08) - view.s) * .06; view.o += (goal.o - view.o) * .05;
+      spin.rotation.y += .0028 + vel*.02;
+      rx += (my*.5 - rx) * .05; ry += (mx*.7 - ry) * .05;
+      pivot.rotation.x = .2 + rx; pivot.rotation.y = ry;
+      vel *= .94;
+      draw();
+    }
+    if(!reduce) requestAnimationFrame(frame);
+  })();
+  
+    /* ---------- certificate preview ---------- */
+    (function(){
+      var open = document.getElementById('cert-open'), dlg = document.getElementById('cert-dialog'), close = document.getElementById('cert-close');
+      if(!open || !dlg) return;
+      open.addEventListener('click', function(){
+        if(typeof dlg.showModal === 'function'){ dlg.showModal(); }
+        else { window.open(dlg.querySelector('img').src, '_blank', 'noopener'); }
+      });
+      close.addEventListener('click', function(){ dlg.close(); });
+      dlg.addEventListener('click', function(e){ if(e.target === dlg) dlg.close(); });
+    })();
+</script>
+</body>
 </html>
